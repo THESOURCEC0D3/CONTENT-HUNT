@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(165, 163, 163);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
+
+.container{
+    display: flex;
+    max-width: 800px;
+    margin: 70px auto;
+}
+
+img{
+    border-radius: 12px;
+}
+
+.form-section{
+    width: 100%;
+}
+
+form{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    left: 33rem;
+    height: 525px;
+    padding: 50px;
+    width: 500px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+form input{
+    height:45px;
+    width: 200px;
+    border: 1px solid rgb(161, 158, 158);
+    border-radius: 5px;
+}
+
+form .row1{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.firstname{
+    height: 83px;
+}
+
+.email{
+    width: 80%;
+}
+
+.email input{
+    width: 100%;
+}
+
+.password{
+    width: 80%;
+}
+
+.password input{
+    width: 100%;
+}
+
+
+
+
+
+
+
