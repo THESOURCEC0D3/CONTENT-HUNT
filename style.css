@@ -19,6 +19,7 @@ body{
 
 svg{
     position:absolute;
+    top: 10px;
     width: 20px;
     left: 30px;
 }
@@ -64,16 +65,52 @@ label{
     color: rgb(140, 86, 80);
 }
 
+
+
 form .row1{
     display: flex;
     width: 100%;
+    justify-content: space-between;
     gap: 0.5rem;
     margin-top: 75px;
 }
 
+
 form .row1 input{
-    height: 40px;
+    height: 45px;
+    width: 190px;
 }
+
+form .firstname{
+    position: relative;
+}
+
+.firstname label{
+    position: absolute;
+    background-color: white;
+    top: 18px;
+    margin: px;
+    font-size: 14px;
+    font-weight: bold;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+
+form .lastname{
+    position: relative;
+}
+
+.lastname label{
+    position: absolute;
+    background-color: white;
+    top: 18px;
+    margin: px;
+    font-size: 14px;
+    font-weight: bold;
+    left: 25%;
+    transform: translate(-50%,-50%);  
+}
+
 
 .email{
     width: 100%;
@@ -83,6 +120,22 @@ form .row1 input{
     width: 100%;
 }
 
+form .email{
+    position: relative;
+}
+
+.email label{
+    position: absolute;
+    background-color: white;
+    top: 18px;
+    margin: px;
+    font-size: 14px;
+    font-weight: bold;
+    left: 8%;
+    transform: translate(-50%,-50%);    
+}
+
+
 .password{
     width: 100%;
     position: relative;
@@ -90,6 +143,21 @@ form .row1 input{
 
 .password input{
     width: 100%;
+}
+
+form .password{
+    position: relative;
+}
+
+.password label{
+    position: absolute;
+    background-color: white;
+    top: 18px;
+    margin: px;
+    font-size: 14px;
+    font-weight: bold;
+    left: 11%;
+    transform: translate(-50%,-50%);   
 }
 
 .closed-eye svg{
