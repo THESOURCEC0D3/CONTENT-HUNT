@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+  
+  
 
 body{
     background-color: rgb(165, 163, 163);
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Carme&display=swap');
 
 .container{
     display: flex;
@@ -89,7 +89,10 @@ form .firstname{
     position: absolute;
     background-color: white;
     top: 18px;
-    margin: px;
+    border: 0.5px solid;
+    width: 75px;
+    text-align: center;
+    border: none;
     font-size: 14px;
     font-weight: bold;
     left: 25%;
@@ -104,7 +107,10 @@ form .lastname{
     position: absolute;
     background-color: white;
     top: 18px;
-    margin: px;
+    border: 0.5px solid;
+    width: 75px;
+    text-align: center;
+    border: none;
     font-size: 14px;
     font-weight: bold;
     left: 25%;
@@ -128,7 +134,10 @@ form .email{
     position: absolute;
     background-color: white;
     top: 18px;
-    margin: px;
+    border: 0.5px solid;
+    width: 45px;
+    text-align: center;
+    border: none;
     font-size: 14px;
     font-weight: bold;
     left: 8%;
@@ -153,7 +162,10 @@ form .password{
     position: absolute;
     background-color: white;
     top: 18px;
-    margin: px;
+    border: 0.5px solid;
+    width: 65px;
+    text-align: center;
+    border: none;
     font-size: 14px;
     font-weight: bold;
     left: 11%;
@@ -209,7 +221,7 @@ span{
     border: 1px solid rgb(161, 158, 158);
     border-radius: 10px;
     padding: 5px;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .tiktok{
@@ -220,7 +232,7 @@ span{
     border: 1px solid rgb(161, 158, 158);
     border-radius: 10px;
     padding: 5px;
-    font-size: 14px;   
+    font-size: 11px;   
 }
 
 

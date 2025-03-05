@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    border: 1px solid rgb(161, 158, 158);
+    border-radius: 10px;
+    padding: 20px;
+    width: 650px;
+    height: 550px;
+    margin: 45px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    color: rgb(140, 86, 80);
+    font-family:'inter' sans-serif ;
+}
+
+.logo img{
+    margin-top: 45px;
+}
+
+.loginmail{
+    width: 80%;
+    position: relative;
+}
+
+.loginmail label{
+    position: absolute;
+    top: 8.5px;
+    left: 13px;
+    background-color: white;
+    border: 0.5px solid white;
+    width: 45px;
+    text-align: center;
+}
+
+.loginmail input{
+    width: 100%;
+    height: 50px;
+    border-width: 0.5px;
+    border-color: rgb(161, 158, 158);
+    border-radius: 10px;
+}
+
+.loginmail input:focus{
+    outline:2px solid rgb(140, 86, 80);
+}
+
+.loginpassword{
+    width: 80%;
+    position: relative;
+}
+
+.loginpassword label{
+    position: absolute;
+    position: absolute;
+    top: 8.5px;
+    left: 13px;
+    background-color: white;
+    border: 0.5px solid white;
+    width: 67px;
+    text-align: center;
+}
+
+.loginpassword input{
+    width: 100%;
+    height: 50px;
+    border-width: 0.5px;
+    border-color: rgb(161, 158, 158);
+    border-radius: 10px;
+}
+
+.loginpassword input:focus{
+    outline: 2px solid rgb(140, 86, 80);
+}
+
+svg{
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    width: 20px;
+}
+
+.loginpass{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.loginpass button{
+    width: 100%;
+    height: 50px;
+    border-width: 0.5px;
+    border-radius: 10px;
+    background-color: rgb(140, 86, 80);
+    color: white;
+    font-size: 25px;
+}
+
+.loginpass p{
+    text-decoration: underline;
+}
+
+.options{
+    display: flex;
+    gap: 1rem;
+    margin-top: 25px;
+}
+
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgb(161, 158, 158);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px;
+    color: black;
+}
+
+
+.tiktok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgb(161, 158, 158);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 12px; 
+    color: black;  
+}
