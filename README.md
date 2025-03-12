@@ -1,1 +1,1 @@
-Our Inaugural Project
+...content marketplace for Social Media Influencers.
