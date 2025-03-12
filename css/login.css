@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family: carmeregular;
+    src: url(./fonts/Carme-Regular.ttf);
+}
+
 
 .container{
     border: 1px solid rgb(161, 158, 158);
@@ -17,7 +22,7 @@
     align-items: center;
     gap: 1.5rem;
     color: rgb(140, 86, 80);
-    font-family:'inter' sans-serif ;
+    font-family: 'carmeregular';
 }
 
 .logo img{
