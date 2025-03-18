@@ -27,7 +27,10 @@ body{
   
 
 .container{
+    border: 3px solid purple;
+    padding: 1em;
     display: flex;
+    width: 80%;
     max-width: 800px;
     margin: 70px auto;
     position: relative;
@@ -40,25 +43,29 @@ svg{
     left: 30px;
 }
 
+.image-section{
+width: 35%;
+position: relative;
+}
+
 img{
     border-radius: 12px;
 }
 
 .form-section{
-    width: 100%;
+    width: 65%;
 }
 
 form{
     background-color: rgb(255, 255, 255);
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-    left: 17rem;
-    height: 525px;
-    padding: 50px;
-    width: 500px;
+    padding: 1.85em;
+    min-height: 525px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 12px;
@@ -72,8 +79,7 @@ h1{
     color: rgb(140, 86, 80);;
 }
 form input{
-    height:45px;
-    width: 200px;
+    padding: 1.3em;
     border: 1px solid rgb(161, 158, 158);
     border-radius: 5px;
 }
@@ -88,14 +94,13 @@ form .row1{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    gap: 0.5rem;
     margin-top: 75px;
 }
 
 
 form .row1 input{
-    height: 45px;
-    width: 190px;
+    padding: 1.2em;
+    width: 100%;
 }
 
 form .firstname{
@@ -164,12 +169,12 @@ form .email{
 }
 
 
-.password{
+form .password{
     width: 100%;
     position: relative;
 }
 
-.password input{
+form .password input{
     width: 100%;
 }
 
@@ -198,25 +203,25 @@ form .password{
     color: rgb(140, 86, 80);;
 }
 
-.btn{
-    width: 95%;
+form .btn{
+    width: 90%;
 }
 
-.btn button{
+form .btn button{
     width: 100%;
-    height: 45px;
+    padding: 0.3em;
     border: 1px solid rgb(161, 158, 158);
     border-radius: 8px;
     background-color: rgb(140, 86, 80);
 }
 
-button h2{
+form button h2{
     color: white;
     font-family: 'Clash Display', sans-serif;
     cursor: pointer;
 }
 
-.qtn p{
+form .qtn p{
     color: rgb(140, 86, 80);
     text-align: center;
     margin-top: 5px;
@@ -224,19 +229,19 @@ button h2{
     cursor: pointer;
 }
 
-span{
+form span{
     text-decoration:underline;
 }
 
-.options{
+form .options{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
-.facebook{
+form .facebook{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,7 +253,7 @@ span{
     cursor: pointer;
 }
 
-.tiktok{
+form .tiktok{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,7 +266,403 @@ span{
 }
 
 
+@media (max-width: 425px){
 
+    .container{
+        border: 3px solid purple;
+        padding: 0.5em;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 800px;
+        margin: 70px auto;
+        position: relative;
+    }
+    
+    svg{
+        position:absolute;
+        top: 10px;
+        width: 20px;
+        left: 30px;
+    }
+    .image-section img{
+     width: 100%;
+    }
 
+    .image-section{
+        width: 100%;
+    }
+
+    .form-section{
+        width: 100%;
+    }
+    
+    form{
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 1.85em;
+        margin:-120px auto 0;
+        min-height: 525px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    
+    h1{
+        font-family: 'Clash Display', sans-serif;
+        position: absolute;
+        left: 45px;
+        color: rgb(140, 86, 80);;
+    }
+    form input{
+        padding: 1.3em;
+        border: 1px solid rgb(161, 158, 158);
+        border-radius: 5px;
+    }
+    
+    label{
+        color: rgb(140, 86, 80);
+    }
+    
+    
+    
+    form .row1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 75px;
+    }
+    
+    
+    form .row1 input{
+        padding: 1.2em;
+        width: 100%;
+    }
+    
+    form .firstname{
+        position: relative;
+        outline: none;
+    
+    }
+    
+    .firstname label{
+        position: absolute;
+        background-color: white;
+        top: 18px;
+        border: 0.5px solid;
+        width: 75px;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        left: 25%;
+        transform: translate(-50%,-50%);
+    }
+    
+    form .lastname{
+        position: relative;
+    }
+    
+    .lastname label{
+        position: absolute;
+        background-color: white;
+        top: 18px;
+        border: 0.5px solid;
+        width: 75px;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        left: 25%;
+        transform: translate(-50%,-50%);  
+    }
+    
+    
+    .email{
+        width: 100%;
+    }
+    
+    .email input{
+        width: 100%;
+    }
+    
+    form .email{
+        position: relative;
+    }
+    
+    .email label{
+        position: absolute;
+        background-color: white;
+        top: 18px;
+        border: 0.5px solid;
+        width: 45px;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        left: 8%;
+        transform: translate(-50%,-50%);    
+    }
+    
+    
+    form .password{
+        width: 100%;
+        position: relative;
+    }
+    
+    form .password input{
+        width: 100%;
+    }
+    
+    form .password{
+        position: relative;
+    }
+    
+    .password label{
+        position: absolute;
+        background-color: white;
+        top: 18px;
+        border: 0.5px solid;
+        width: 65px;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        left: 11%;
+        transform: translate(-50%,-50%);   
+    }
+    
+    .closed-eye svg{
+        position: absolute;
+        top: 30px;
+        left: 260px;
+        color: rgb(140, 86, 80);;
+    }
+    
+    form .btn{
+        width: 90%;
+    }
+    
+    form .btn button{
+        width: 100%;
+        padding: 0.3em;
+    }
+    
+    form .options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 10px;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 930px){
+    .container{
+        border: 3px solid purple;
+        padding: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 800px;
+        margin: 70px auto;
+        position: relative;
+    }
+    
+    svg{
+        position:absolute;
+        top: 10px;
+        width: 20px;
+        left: 30px;
+    }
+    .image-section img{
+        width: 100%;
+    }
+
+    .image-section{
+        display: non;
+        width:80%;
+    }
+
+    .form-section{
+        width: 100%;
+    }
+    
+    form{
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 1.85em;
+        min-height: 525px;
+        margin:-120px auto 0 ;
+        width: 80%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    
+    h1{
+        font-family: 'Clash Display', sans-serif;
+        position: absolute;
+        left: 45px;
+        color: rgb(140, 86, 80);;
+    }
+    form input{
+        padding: 1.3em;
+        border: 1px solid rgb(161, 158, 158);
+        border-radius: 5px;
+    }
+    
+    label{
+        color: rgb(140, 86, 80);
+    }
+    
+    
+    
+    form .row1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 75px;
+    }
+    
+    
+    form .row1 input{
+        padding: 1.2em;
+        width: 100%;
+    }
+    
+    form .firstname{
+        position: relative;
+        outline: none;
+    
+    }
+    
+    .firstname label{
+        position: absolute;
+        background-color: white;
+        top: 18px;
+        border: 0.5px solid;
+        width: 75px;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        left: 25%;
+        transform: translate(-50%,-50%);
+    }
+    
+    form .lastname{
+        position: relative;
+    }
+    
+    .lastname label{
+        position: absolute;
+        background-color: white;
+        top: 18px;
+        border: 0.5px solid;
+        width: 75px;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        left: 25%;
+        transform: translate(-50%,-50%);  
+    }
+    
+    
+    .email{
+        width: 100%;
+    }
+    
+    .email input{
+        width: 100%;
+    }
+    
+    form .email{
+        position: relative;
+    }
+    
+    .email label{
+        position: absolute;
+        background-color: white;
+        top: 18px;
+        border: 0.5px solid;
+        width: 45px;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        left: 8%;
+        transform: translate(-50%,-50%);    
+    }
+    
+    
+    form .password{
+        width: 100%;
+        position: relative;
+    }
+    
+    form .password input{
+        width: 100%;
+    }
+    
+    form .password{
+        position: relative;
+    }
+    
+    .password label{
+        position: absolute;
+        background-color: white;
+        top: 18px;
+        border: 0.5px solid;
+        width: 65px;
+        text-align: center;
+        border: none;
+        font-size: 14px;
+        font-weight: bold;
+        left: 11%;
+        transform: translate(-50%,-50%);   
+    }
+    
+    .closed-eye svg{
+        position: absolute;
+        top: 30px;
+        left: 260px;
+        color: rgb(140, 86, 80);;
+    }
+    
+    form .btn{
+        width: 90%;
+    }
+    
+    form .btn button{
+        width: 100%;
+        padding: 0.3em;
+    }
+    
+    form .options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 10px;
+    }
+
+}
 
 
