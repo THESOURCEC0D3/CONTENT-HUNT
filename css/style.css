@@ -36,6 +36,13 @@ body{
     position: relative;
 }
 
+svg{
+    position:absolute;
+    top: 10px;
+    width: 20px;
+    left: 30px;
+}
+
 .image-section{
 width: 35%;
 position: relative;
@@ -191,7 +198,6 @@ form .password{
 
 .closed-eye svg{
     position: absolute;
-    width: 25px;
     top: 35px;
     left: 390px;
     color: rgb(140, 86, 80);;
